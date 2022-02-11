@@ -42,7 +42,8 @@ __license__ = "SATA"
 __version__ = "2020.7.20"
 
 class Bilibili:
-    app_key = "bca7e84c2d947ac6"
+    app_key = "bca7e84c2d947ac6"    app_key = "bca7e84c2d947ac6"
+
     patterns = {
         'video': {
             'id': 1,
