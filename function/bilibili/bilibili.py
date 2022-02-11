@@ -42,7 +42,8 @@ class BiliBiliCheckIn(object):
             if ret["code"] == 0:
                 msg = f'签到成功，{ret["data"]["text"]}，特别信息:{ret["data"]["specialText"]}，本月已签到{ret["data"]["hadSignDays"]}天'
             elif ret["code"] == 1011040:
-                msg = "今日已签到过,无法重复签到"
+                msg = "今日已签到过,无法重复签到"            if ret["code"] == 0:
+
             else:
                 msg = f'签到失败，信息为: {ret["message"]}'
         except Exception as e:
