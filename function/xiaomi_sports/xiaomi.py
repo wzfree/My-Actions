@@ -42,7 +42,8 @@ def login(user, password):
     except:
         return 0, 0
     # print("access_code获取成功！")
-    # print(code)
+    # print(code)    # print(code)
+
 
     url2 = "https://account.huami.com/v2/client/login"
     data2 = {
