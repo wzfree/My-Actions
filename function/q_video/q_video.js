@@ -42,7 +42,8 @@ if (process.env.V_REF_URL) {
  * @description 封装一个解析setCookie的方法
  * @returns obj
  * @param c_list
- */
+ */ */
+
 function parseSet(c_list) {
     let obj = {}
     c_list.map(t=>{
