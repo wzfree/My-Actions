@@ -42,7 +42,8 @@ def main():
     if ("errorCode" in response.text):
         print(response.text)
     else:
-        description = response.json()['description']
+        description = response.json()['description']        prize_name = response.json()['prizeName']
+
         print(f"抽奖获得{description}")
     response = s.get(url2,headers=headers)
     if ("errorCode" in response.text):
